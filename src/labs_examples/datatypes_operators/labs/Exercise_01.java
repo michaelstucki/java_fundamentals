@@ -17,6 +17,15 @@ public class Exercise_01 {
     public static void main(String[] args) {
 
         // write code here
+        int i = 1_000;
+        double d = Math.E;
+        float f = 3.14F;
+        char c = '%';
+
+        System.out.println("i: " + i);
+        System.out.println("d: " + d);
+        System.out.println("f: " + f);
+        System.out.println("c: " + c);
 
     }
 }

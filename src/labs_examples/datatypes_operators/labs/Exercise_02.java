@@ -23,7 +23,20 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        // Widening
+        int i = 30;
+        double d = i;
+        System.out.println(d);
+
+        // Narrowing
+        double d2 = 10.5;
+        int i2 = (int) d2;
+        System.out.println(i2);
+
+        /*
+         * Information is potentially lost with a narrowing conversion but not with a widening conversion.
+         */
+
 
     }
 }

@@ -18,8 +18,12 @@ class LogicalOperators {
         }
 
         // write your code below
-
+        System.out.println(a + " & " + b + " is " + (a & b));
+        System.out.println(a + " && " + b + " is " + (a && b));
+        System.out.println(a + " | " + b + " is " + (a | b));
+        System.out.println(a + " || " + b + " is " + (a || b));
+        System.out.println(a + " ^ " + b + " is " + (a ^ b));
+        System.out.println("!" + a + " is " + (!a));
     }
-
 }
 
