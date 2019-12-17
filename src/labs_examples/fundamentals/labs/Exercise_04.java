@@ -14,5 +14,16 @@ public class Exercise_04 {
 
         // write code here
 
+        // Cylinder dimensions
+        double radius = 3.14;
+        double height = 5.0;
+
+        // Cylinder volume
+        double cylinderVolume = Math.PI * radius * radius * height;
+        System.out.println( "Cylinder Volume: " + cylinderVolume );
+
+        // Cylinder surface area
+        double cylinderSurfaceArea = ( 2 * Math.PI * radius * radius ) + ( 2 * Math.PI * radius * height );
+        System.out.println( "Cylinder Surface Area: " + cylinderSurfaceArea );
     }
 }
