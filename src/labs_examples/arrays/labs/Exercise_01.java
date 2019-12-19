@@ -14,25 +14,34 @@ import java.util.Scanner;
 
 public class Exercise_01 {
     public static void main(String[] args) {
+
         final int SIZE = 10;
         Scanner scanner = new Scanner(System.in);
-        int sum = 0;
+
+        // Get numbers from users
         int[] numbers = new int[SIZE];
         for (int i = 0; i < numbers.length; i++) {
             System.out.print("Enter a number: ");
-            int number = scanner.nextInt();
-            numbers[i] = number;
-            sum += number;
+            numbers[i] = scanner.nextInt();
         }
 
-        double average = (double) sum / SIZE;
-
+        // Echo the numbers
         System.out.print("Numbers entered: ");
         for (int number : numbers) {
             System.out.printf("%d ", number);
         }
         System.out.println();
 
+        // Calculate the sum
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+
+        // Calculate the average
+        double average = (double) sum / SIZE;
+
+        // Print sum and average
         System.out.println("Sum: " + sum);
         System.out.println("Average: " + average);
 

@@ -20,5 +20,22 @@ public class Exercise_03 {
     public static void main(String[] args) {
 
         int[][] twoDArray = new int[5][5];
+
+        // Populate array
+        int k = 1;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                twoDArray[i][j] = 3 * k;
+                k++;
+            }
+        }
+
+        // Print array
+        for (int[] oneDArray : twoDArray) {
+            for (int num : oneDArray) {
+                System.out.printf("%3d", num);
+            }
+            System.out.println();
+        }
     }
 }

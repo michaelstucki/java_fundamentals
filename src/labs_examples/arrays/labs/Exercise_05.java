@@ -10,4 +10,14 @@ package labs_examples.arrays.labs;
 
 public class Exercise_05 {
 
+    public static void main(String[] args) {
+
+        // Create and populate array
+        String[] words = {"King", "Queen", "Rook", "Knight", "Bishop", "Pawn"};
+
+        // Print array in reverse order
+        for (int i = words.length - 1; i > -1; i--) {
+            System.out.println(words[i]);
+        }
+    }
 }
